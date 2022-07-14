@@ -43,7 +43,7 @@ public class BookControllerTest {
 
     @Test
     void testRemoveIndexPage() throws Exception {
-        mockMvc.perform(get("/books/remove")).andDo(print()).andExpect(status().isOk())
+        mockMvc.perform(get("/books/remove/break")).andDo(print()).andExpect(status().isOk())
                 .andExpect(forwardedUrl("/WEB-INF/views/remove.jsp"));
     }
 
